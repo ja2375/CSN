@@ -75,9 +75,9 @@ void hexDec(){
     printf("Escribe el digito hexadecimal a convertir: ");
     scanf("%s", hexadecimal);
 
-    /* Converting hexadecimal number to decimal number */
+    //Convertir de hexadecimal a decimal
     for(i=strlen(hexadecimal)-1; i >= 0; i--) {
-        /*search currect character in hexDigits array */
+        //Buscar digito en aarray de caracteres hexadecimales
         for(j=0; j<16; j++){
             if(hexadecimal[i] == hexDigits[j]){
                 decimalNumber += j*pow(16, power);
@@ -102,7 +102,7 @@ void decHex(){
     while(quotient!=0){
          temp = quotient % 16;
 
-      //To convert integer into character
+      //Convertimos un entero a un caracter
       if( temp < 10)
            temp = temp + 48;
       else
